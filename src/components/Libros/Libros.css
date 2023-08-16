@@ -1,0 +1,16 @@
+.libros{
+    display: flex;
+    flex-direction: row;
+}
+
+.classLibros{
+    background-color: aquamarine;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.classLibros img{
+    width: 200px;
+}

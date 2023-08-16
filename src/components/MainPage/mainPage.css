@@ -1,0 +1,82 @@
+
+  article {
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    padding: 1rem;
+    grid-area: article;
+  
+  }
+
+  #articles{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  article p {
+    font-family: Georgia;
+    font-size: 2rem;
+  }
+  
+  article h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  aside {
+    border-top: 1px solid black;
+    padding: 1rem;
+    grid-area: aside;
+  }
+  
+  aside h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  aside p {
+    font-family: Georgia;
+    font-size: 1.6rem;
+  }
+  
+  
+  #menu2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: darkblue;
+  }
+
+  @media only screen and (max-width: 760px) {
+    main {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(5rem, auto);
+      grid-template-areas:
+        "header header header header"
+        "header header header header"
+        "nav nav nav nav"
+        "article article article article"
+        "article article article article"
+        "aside aside aside aside"
+        "aside aside aside aside"
+        "footer footer footer footer";
+      width: 100%;
+      max-width: 96rem;
+      margin: 0 auto;
+      border: 2px solid black;
+    }
+  
+    #menu1 {
+      display: grid;
+      width: 100%;
+      grid-template-columns: auto;
+      background-color: #212121;
+      grid-area: nav;
+    }
+    #menu2 {
+      display: none;
+    }
+ 
+  }
+  
